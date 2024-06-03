@@ -16,7 +16,7 @@ def summarize_video(video_id):
     summary = summarizer(transcript, max_length=200, min_length=50, do_sample=False)[0]['summary_text']
     return summary
 
-# Example Usage
+
 video_url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"  # Replace with your video URL
 video_id = video_url.split("watch?v=")[1]
 summary = summarize_video(video_id)
